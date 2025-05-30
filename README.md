@@ -1,12 +1,28 @@
-- 👋 Hi, I’m @geosignalanalytics
-- 👀 I’m interested in ...
-- 🌱 I’m currently learning ...
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
+# GeoSignal Analytics
 
-<!---
-geosignalanalytics/geosignalanalytics is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+**GeoSignal Analytics — Advanced Signal Processing for Imaging the Earth, from Surface to Core**
+
+GeoSignal Analytics is a scientific initiative dedicated to advancing high-resolution Earth imaging using modern signal processing techniques, including:
+
+- Distributed Acoustic Sensing (DAS)
+- Ambient noise interferometry
+- Machine learning for geophysical data analysis
+- Near-surface to deep Earth imaging
+
+This site serves as the official presentation of the mission, biography, research projects, and professional profiles of the founder.
+
+Visit the live website: [GeoSignal Analytics](https://<ton-username>.github.io/geosignalanalytics/)
+
+---
+
+## 🚀 Project Structure
+
+- `index.html`: Main HTML page for the site.
+- `styles.css`: Stylesheet defining the site's appearance.
+
+---
+
+## 📫 Contact
+
+For collaboration or inquiries, please reach out at:  
+`obouesonofgod1@gmail.com`
