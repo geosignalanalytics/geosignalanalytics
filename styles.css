@@ -26,6 +26,22 @@ header p {
   font-size: 1.2em;
 }
 
+.logo {
+  max-width: 140px;
+  display: block;
+  margin: 0 auto 15px;
+}
+
+.profile-photo {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  margin: 15px auto;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
 nav ul {
   list-style: none;
   padding: 0;
