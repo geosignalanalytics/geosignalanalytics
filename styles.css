@@ -55,11 +55,12 @@ nav ul li a:hover {
 
 /* Main Layout */
 main {
-  padding: 30px 20px;
-  max-width: 900px;
-  margin: auto;
+  padding: 40px 40px;
+  max-width: 1200px;
+  margin: 30px auto;
   background: white;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
 }
 
 section {
