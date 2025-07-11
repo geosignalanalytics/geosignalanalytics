@@ -63,6 +63,15 @@ main {
   border-radius: 8px;
 }
 
+header {
+  padding: 50px 30px;
+}
+
+nav ul {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
 section {
   margin-bottom: 40px;
 }
