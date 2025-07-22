@@ -1,87 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" /> 
+<head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>GeoSignal Analytics</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
   <link rel="icon" href="favicon.png" type="image/png" />
 </head>
 <body>
-  <header>
-    <img src="images/logo1.png" alt="GeoSignal Analytics Logo" class="logo" />
-    <h1>GeoSignal Analytics</h1>
-    <p>Advanced Signal Processing for Imaging the Earth, from Surface to Core</p>
-    <nav>
-      <ul>
-        <li><a href="#mission">Mission</a></li>
-        <li><a href="#bio">Biography</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#courses">Courses</a></li>
-        <li><a href="#publications">Publications</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    
-    <section id="mission">
-      <h2>Mission</h2>
-      <p>At GeoSignal Analytics, our mission is to deliver cutting-edge solutions for geophysical signal processing and Earth imaging. We empower researchers, energy companies, and environmental stakeholders with advanced tools and methodologies to extract meaningful insights from complex subsurface data. By combining deep domain expertise with modern machine learning and comprehensive geophysical data analytics, we bridge the gap between research innovation and real-world geoscience applications, and we maintain a strong commitment to transparency, reproducibility, and scientific impact.</p>
-    </section>
-    
-    <section id="bio">
-      <h2>Biography</h2>
-      <img src="images/oboue.jpg" alt="Dr. Innocent Oboue" class="profile-photo" />
-      <p>Dr. Innocent Oboué is a geophysicist and the founder of GeoSignal Analytics. He holds a Ph.D. in Resource Exploration and Geophysics from Zhejiang University, where he specialized in advanced signal processing for subsurface imaging. His research focuses on developing innovative methods for processing and analyzing diverse geophysical datasets, including seismic, Distributed Acoustic Sensing (DAS), ambient noise, and other geophysical observations. Dr. Oboué applies machine learning, interferometry, and modern signal enhancement techniques to improve imaging of the Earth's structure from the near surface to the deep interior. His work bridges academic research and real-world geoscience applications.</p>
-    </section>
-   <section id="projects">
-  <h2>Research & Innovation Projects</h2>
-  <p>GeoSignal Analytics leads research and development initiatives at the intersection of geophysical signal processing, machine learning, and Earth imaging. Our projects aim to deliver practical and high-impact solutions for subsurface exploration, environmental assessment, and energy discovery.</p>
+  <div class="container">
+    <header>
+      <img src="images/logo1.png" alt="GeoSignal Analytics Logo" class="logo" />
+      <h1>GeoSignal Analytics</h1>
+      <p class="tagline">Advanced Signal Processing for Imaging the Earth, from Surface to Core</p>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="#mission">Mission</a></li>
+          <li><a href="#bio">Biography</a></li>
+          <li><a href="#services">Projects</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#courses">Courses</a></li>
+          <li><a href="#publications">Publications</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="mission">
+        <h2>Mission</h2>
+        <p>At GeoSignal Analytics, our mission is to deliver cutting-edge solutions for geophysical signal processing and Earth imaging. We empower researchers, energy companies, and environmental stakeholders with advanced tools and methodologies to extract meaningful insights from complex subsurface data. By combining deep domain expertise with modern machine learning and comprehensive geophysical data analytics, we bridge the gap between research innovation and real-world geoscience applications, and we maintain a strong commitment to transparency, reproducibility, and scientific impact.</p>
+      </section>
+
+      <section id="bio">
+        <h2>Biography</h2>
+        <div class="bio-section">
+          <img src="images/oboue.jpg" alt="Dr. Innocent Oboue" class="profile-photo" />
+          <p>Dr. Innocent Oboué is a geophysicist and the founder of GeoSignal Analytics. He holds a Ph.D. in Resource Exploration and Geophysics from Zhejiang University, where he specialized in advanced signal processing for subsurface imaging. His research focuses on developing innovative methods for processing and analyzing diverse geophysical datasets, including seismic, Distributed Acoustic Sensing (DAS), ambient noise, and other geophysical observations. Dr. Oboué applies machine learning, interferometry, and modern signal enhancement techniques to improve imaging of the Earth's structure from the near surface to the deep interior. His work bridges academic research and real-world geoscience applications.</p>
+        </div>
+      </section>
+
+
+<section id="services">
+  <h2>Services</h2>
+  <p>At GeoSignal Analytics, we offer cutting-edge scientific and technical services tailored to the needs of research institutions, energy companies, and environmental agencies. Our core services for 2025–2026 include:</p>
+
+  <h3>1. Seismic Data Denoising & Enhancement</h3>
+  <p>We apply advanced signal processing and machine learning techniques to improve the signal-to-noise ratio (SNR) in large seismic datasets, including Distributed Acoustic Sensing (DAS) and conventional geophone arrays. Our denoising pipelines preserve critical subsurface features while reducing artifacts and noise.</p>
+
+  <h3>2. Ambient Noise Interferometry & Subsurface Imaging</h3>
+  <p>We process ambient seismic data to extract empirical Green’s functions and provide high-resolution images of the Earth's subsurface. This service is ideal for passive monitoring, urban geophysics, infrastructure analysis, and environmental applications.</p>
+
+  <h3>3. Custom Machine Learning Models for Geophysical Data</h3>
+  <p>From training deep neural networks to applying unsupervised learning for pattern recognition in geophysical time series, we develop bespoke AI solutions that accelerate interpretation and improve subsurface characterization.</p>
+
+  <h3>Additional Services</h3>
   <ul>
-    <li><strong>Enhancing Subsurface Imaging with Ambient Noise Green’s Functions</strong> – Advancing non-invasive seismic characterization methods for environmental and infrastructure applications.</li>
-    <li><strong>Deep Learning for Preconditioning Empirical Green’s Functions</strong> – Improving stability and interpretability of noise-derived Green’s functions using self-supervised and hybrid ML architectures.</li>
-    <li><strong>Predicting Hydrocarbon Presence from Seismic Attributes</strong> – Applying machine learning models to detect hydrocarbon indicators from complex seismic features.</li>
-    <li><strong>Seismic Inversion and Interpretation</strong> – Leveraging deep learning to enhance model-driven inversion and subsurface structural interpretation.</li>
-    <li><strong>Decoding Underfit to Overfit in Denoising Models</strong> – Designing robust neural networks to optimize the trade-off between signal preservation and noise suppression in seismic data.</li>
+    <li><strong>Training & Workshops:</strong> We offer short courses and training programs in geophysical signal processing, machine learning, and seismic interpretation.</li>
+    <li><strong>Open-Source Software Development:</strong> We contribute and maintain open-source tools that support reproducible and scalable geoscience research.</li>
+    <li><strong>Consulting & Joint Research Proposals:</strong> We collaborate with academic and industry partners on research, grant proposals, and custom geophysical solutions.</li>
   </ul>
 </section>
-    
-    <section id="courses">
-      <h2>Online Courses & Trainings</h2>
-      <p>GeoSignal Analytics offers self-paced and instructor-led courses on advanced geophysical signal processing techniques.</p>
-      <ul>
-        <li>
-          <strong>Introduction to DAS for Geoscientists</strong> – A primer on Distributed Acoustic Sensing and its applications in near-surface and deep Earth imaging. 
-          <a href="https://github.com/Oboue/DAS-course" target="_blank">[Course Materials]</a>
-        </li>
-        <li>
-          <strong>Machine Learning for Geophysical Imaging</strong> – Learn how ML models are applied to empirical Green’s functions, inversion, and noise removal. 
-          <a href="https://github.com/Oboue/ML-geophysics" target="_blank">[GitHub Repo]</a>
-        </li>
-        <li>
-          <strong>Ambient Noise Interferometry</strong> – From cross-correlation to tomography.
-          <a href="#">[Coming Soon]</a>
-        </li>
-      </ul>
-    </section>
 
-    <section id="publications">
-      <h2>Publications & Profiles</h2>
-      <ul>
-        <li><a href="https://scholar.google.com.au/citations?user=2C4k60IAAAAJ&hl=fr" target="_blank">Google Scholar</a></li>
-        <li><a href="https://github.com/Oboue" target="_blank">GitHub</a></li>
-      </ul>
-    </section>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
-    </section>
-  </main>
+      <section id="projects">
+        <h2>Research & Innovation Projects</h2>
+        <ul>
+          <li><strong>Ambient Noise Green’s Functions:</strong> Advancing non-invasive seismic characterization methods for environmental and infrastructure applications.</li>
+          <li><strong>Preconditioning Empirical Green’s Functions:</strong> Using ML to improve stability and interpretability of noise-derived signals.</li>
+          <li><strong>Hydrocarbon Prediction from Seismic:</strong> ML-based models for detecting hydrocarbon indicators from seismic attributes.</li>
+          <li><strong>Seismic Inversion:</strong> Deep learning for structural interpretation and model-based inversion.</li>
+          <li><strong>Denoising Networks:</strong> Designing deep models that balance underfitting and overfitting in real seismic noise environments.</li>
+        </ul>
+      </section>
 
-  <footer>
-    <p>&copy; 2025 GeoSignal Analytics. All rights reserved.</p>
-  </footer>
+      <section id="courses">
+        <h2>Online Courses & Trainings</h2>
+        <ul>
+          <li><strong>DAS for Geoscientists:</strong> A primer on Distributed Acoustic Sensing and its geophysical applications. <a href="https://github.com/Oboue/DAS-course" target="_blank">[Course Materials]</a></li>
+          <li><strong>ML for Geophysical Imaging:</strong> Applying ML to Green's functions, inversion, and denoising. <a href="https://github.com/Oboue/ML-geophysics" target="_blank">[GitHub Repo]</a></li>
+          <li><strong>Ambient Noise Interferometry:</strong> From cross-correlation to tomography. <a href="#">[Coming Soon]</a></li>
+        </ul>
+      </section>
+
+      <section id="publications">
+        <h2>Publications & Profiles</h2>
+        <ul>
+          <li><a href="https://scholar.google.com.au/citations?user=2C4k60IAAAAJ&hl=fr" target="_blank">Google Scholar</a></li>
+          <li><a href="https://github.com/Oboue" target="_blank">GitHub</a></li>
+        </ul>
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 GeoSignal Analytics. All rights reserved.</p>
+    </footer>
+  </div>
 </body>
 </html>
