@@ -1,93 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Geosignal Research Institute</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Geosignal Research Institute</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <header class="navbar">
+    <div class="logo">
+      <img src="logo1.png" alt="Geosignal Research Institute Logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <!-- Navigation -->
-    <header class="navbar">
-        <div class="logo">
-            <img src="logo1.png" alt="GRI Logo">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#hero">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <section id="hero" class="section hero">
+    <div class="hero-content">
+      <h1>Geosignal Research Institute</h1>
+      <p>Advancing Computational Geophysics & AI for Subsurface Insights</p>
+      <a href="#about" class="btn">Learn More</a>
+    </div>
+  </section>
 
-    <!-- Hero Section -->
-    <section id="hero" class="section hero">
-        <div class="hero-content">
-            <h1>Geosignal Research Institute</h1>
-            <p>Advancing Computational Geophysics & AI for Subsurface Insights</p>
-            <a href="#about" class="btn">Learn More</a>
-        </div>
-    </section>
+  <section id="about" class="section">
+    <div class="content-container">
+      <div class="profile-box">
+        <img src="oboue.jpg" alt="Dr. Innocent Oboue" class="profile-photo">
+      </div>
+      <div class="text-box">
+        <h2>About Us</h2>
+        <p>Geosignal Research Institute (GRI) is the academic and research branch of Geosignal Analytics LLC. We specialize in developing advanced computational tools, machine learning models, and physics-informed approaches to tackle subsurface geophysics challenges. Our work spans seismic imaging, hydrogeophysics, and induced seismicity, with a mission to integrate data science and geoscience for impactful real-world solutions.</p>
+      </div>
+    </div>
+  </section>
 
-    <!-- About Section -->
-    <section id="about" class="section">
-        <div class="content-container">
-            <img src="oboue.jpg" alt="Founder Photo" class="profile-photo">
-            <div class="text">
-                <h2>About Us</h2>
-                <p>
-                    Geosignal Research Institute (GRI) is the academic and research branch of Geosignal Analytics LLC. 
-                    We specialize in developing advanced computational tools, machine learning models, and 
-                    physics-informed approaches to tackle subsurface geophysics challenges. Our work spans 
-                    seismic imaging, hydrogeophysics, and induced seismicity, with a mission to integrate 
-                    data science and geoscience for impactful real-world solutions.
-                </p>
-            </div>
-        </div>
-    </section>
+  <section id="services" class="section light-bg">
+    <div class="content-container">
+      <h2>Our Services</h2>
+      <div class="cards">
+        <div class="card"><p>Seismic Imaging & Signal Processing</p></div>
+        <div class="card"><p>Hydrogeophysical Data Analysis</p></div>
+        <div class="card"><p>Machine Learning & Deep Learning for Geoscience</p></div>
+        <div class="card"><p>Subsurface Reservoir Prediction</p></div>
+      </div>
+    </div>
+  </section>
 
-    <!-- Services Section -->
-    <section id="services" class="section light-bg">
-        <div class="content-container">
-            <h2>Our Services</h2>
-            <ul>
-                <li>Seismic Imaging & Signal Processing</li>
-                <li>Hydrogeophysical Data Analysis</li>
-                <li>Machine Learning & Deep Learning for Geoscience</li>
-                <li>Subsurface Reservoir Prediction</li>
-            </ul>
-        </div>
-    </section>
+  <section id="projects" class="section">
+    <div class="content-container">
+      <h2>Research & Projects</h2>
+      <p>Our projects focus on integrating AI-driven workflows with traditional geophysical methods. From enhancing PcP seismic phase signals with Deep Image Prior methods to modeling Enhanced Geothermal Systems (EGS), we aim to push the boundaries of subsurface characterization.</p>
+    </div>
+  </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="section">
-        <div class="content-container">
-            <h2>Research & Projects</h2>
-            <p>
-                Our projects focus on integrating AI-driven workflows with traditional geophysical methods. 
-                From enhancing PcP seismic phase signals with Deep Image Prior methods to 
-                modeling Enhanced Geothermal Systems (EGS), we aim to push the boundaries of 
-                subsurface characterization.
-            </p>
-        </div>
-    </section>
+  <section id="contact" class="section light-bg">
+    <div class="content-container">
+      <h2>Contact Us</h2>
+      <p>Email: <a href="mailto:contact@geosignalresearch.org">contact@geosignalresearch.org</a></p>
+      <p>Location: Oklahoma City, USA</p>
+    </div>
+  </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="section light-bg">
-        <div class="content-container">
-            <h2>Contact Us</h2>
-            <p>Email: contact@geosignalresearch.org</p>
-            <p>Location: Oklahoma City, USA</p>
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 Geosignal Research Institute. All rights reserved.</p>
-    </footer>
-
+  <footer>
+    <p>&copy; 2025 Geosignal Research Institute. All Rights Reserved.</p>
+  </footer>
 </body>
 </html>
