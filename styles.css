@@ -1,28 +1,29 @@
 .hero {
-    position: relative;
-    height: 80vh;
-    background: url('hero-bg.jpg') center/cover no-repeat;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white;
+  position: relative;
+  height: 80vh;
+  background: url('hero-bg.jpg') center/cover no-repeat;
+  display: flex;
+  flex-direction: column;   /* center hero text vertically */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding-top: 80px;       /* space so navbar doesn’t overlap text */
 }
 
 .hero::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
-    z-index: -1; /* Place overlay behind text */
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
 }
 
 .hero h1, .hero p {
-    z-index: 1; /* Ensure text is above overlay */
+  z-index: 1;
 }
 
 .hero p {
