@@ -1,8 +1,7 @@
-/* NAVBAR - horizontal at the top */
 .navbar {
   display: flex;
-  justify-content: space-between; /* logo left, links right */
-  align-items: center;            /* vertical center */
+  justify-content: center;  /* centre tous les liens horizontalement */
+  align-items: center;      
   padding: 15px 50px;
   position: fixed;
   top: 0;
@@ -12,15 +11,19 @@
   z-index: 1000;
 }
 
+.navbar .logo {
+  margin-right: 50px; /* espace entre le logo et les liens */
+}
+
 .navbar ul {
-  display: flex;       /* horizontal layout */
+  display: flex;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
 .navbar ul li {
-  margin-left: 25px;   /* space between links */
+  margin: 0 15px; /* espace égal entre tous les liens */
 }
 
 .navbar ul li a {
@@ -34,78 +37,18 @@
   color: #3b82f6;
 }
 
-/* HERO - vertical center content */
-.hero {
-  position: relative;
-  height: 80vh;
-  background: url('hero-bg.jpg') center/cover no-repeat;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: white;
-  padding-top: 80px;       /* avoid navbar overlap */
-}
-
-.hero::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  z-index: -1;
-}
-
-.hero h1, .hero p {
-  z-index: 1;
-}
-
-.hero p {
-  font-size: 1.5rem;
-  margin-bottom: 20px;
-}
-
-.hero .btn {
-  background-color: #3b82f6;
-  color: white;
-  padding: 12px 30px;
-  text-decoration: none;
-  border-radius: 6px;
-  font-weight: bold;
-  transition: background 0.3s;
-}
-
-.hero .btn:hover {
-  background-color: #2563eb;
-}
-
-/* Center all main sections */
-main, section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;  /* vertical alignment */
-  align-items: center;      /* horizontal alignment */
-  text-align: center;
-  max-width: 900px;         /* optional, for readability */
-  margin: 40px auto;        /* centers section horizontally */
-  padding: 20px;
-}
-
-/* Hero buttons container */
-.hero-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 20px;                /* space between buttons */
-  margin-top: 20px;
-}
-
-/* Footer centered */
-footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #111;
-  color: white;
+/* Responsive - pour petits écrans */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 10px 20px;
+  }
+  
+  .navbar ul {
+    flex-direction: column;
+  }
+  
+  .navbar ul li {
+    margin: 10px 0;
+  }
 }
