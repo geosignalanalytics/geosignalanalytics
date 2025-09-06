@@ -82,8 +82,9 @@
   background-color: #2563eb;
 }
 
-section, footer {
-  text-align: center;      /* Centers text horizontally */
-  margin: 40px auto;       /* Adds vertical spacing and centers block horizontally */
-  max-width: 800px;        /* Optional: limit width for better readability */
+/* Center Welcome section and footer */
+.welcome, footer {
+  text-align: center;      /* centers all text */
+  margin: 40px auto;       /* vertical spacing + horizontal centering */
+  max-width: 800px;        /* optional, keeps text readable */
 }
