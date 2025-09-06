@@ -81,3 +81,9 @@
 .hero .btn:hover {
   background-color: #2563eb;
 }
+
+section, footer {
+  text-align: center;      /* Centers text horizontally */
+  margin: 40px auto;       /* Adds vertical spacing and centers block horizontally */
+  max-width: 800px;        /* Optional: limit width for better readability */
+}
