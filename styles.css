@@ -1,32 +1,3 @@
-/* ================= Global Styles ================= */
-body {
-  margin: 0;
-  font-family: 'Roboto', sans-serif;
-  line-height: 1.6;
-  color: #1f2937;
-  background-color: #f9fafb;
-}
-
-/* Navbar */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 50px;
-  background-color: #1f2937;
-}
-.navbar .logo img { height: 50px; }
-.navbar ul { list-style: none; display: flex; margin: 0; padding: 0; }
-.navbar ul li { margin-left: 25px; }
-.navbar ul li a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s;
-}
-.navbar ul li a:hover,
-.navbar ul li a.active { color: #3b82f6; }
-
 /* Hero Section */
 .hero {
   height: 80vh;
@@ -35,11 +6,22 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: white;
   text-align: center;
+  color: white; /* text color */
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7); /* adds shadow for readability */
+  padding: 0 20px;
 }
-.hero h1 { font-size: 3rem; margin-bottom: 10px; }
-.hero p { font-size: 1.5rem; margin-bottom: 20px; }
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
 .hero .btn {
   background-color: #3b82f6;
   color: white;
@@ -49,43 +31,7 @@ body {
   font-weight: bold;
   transition: background 0.3s;
 }
-.hero .btn:hover { background-color: #2563eb; }
 
-/* Section styling */
-section {
-  padding: 60px 20px;
-  max-width: 1100px;
-  margin: auto;
-}
-section h2 {
-  color: #1e40af;
-  margin-bottom: 30px;
-  text-align: center;
-}
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-}
-.card {
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-  padding: 25px;
-  width: 250px;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-}
-
-/* Footer */
-footer {
-  background: #111827;
-  color: white;
-  text-align: center;
-  padding: 20px;
-  margin-top: 40px;
+.hero .btn:hover {
+  background-color: #2563eb;
 }
