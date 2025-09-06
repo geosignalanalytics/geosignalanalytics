@@ -4,128 +4,93 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Geosignal Analytics LLC</title>
-  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      background-color: #f9fafb;
+      color: #111827;
+    }
+    header {
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://upload.wikimedia.org/wikipedia/commons/0/05/Seismic_wave.svg');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+    header h1 { font-size: 3rem; margin: 0; }
+    header p { font-size: 1.2rem; margin-top: 15px; }
+    header .btn {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #3b82f6;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+    section { padding: 60px 20px; max-width: 1100px; margin: auto; }
+    section h2 { color: #1e40af; margin-bottom: 20px; }
+    .research-focus ul { list-style: square; padding-left: 20px; }
+    footer {
+      background: #111827;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
 </head>
 <body>
-  <!-- Navbar -->
   <header>
-    <nav class="navbar">
-      <div class="logo">
-        <img src="logo1.png" alt="Geosignal Logo" />
-      </div>
-      <ul class="nav-links">
-        <li><a href="#hero">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#research">Research</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+    <h1>Geosignal Analytics LLC</h1>
+    <p>Diving Deep into Geoscience with Signal Processing & AI</p>
+    <a href="#about" class="btn">About Us</a>
+    <a href="#institute" class="btn">Research Institute</a>
+    <a href="#contact" class="btn">Contact</a>
   </header>
 
-  <!-- Hero Section -->
-  <section id="hero" class="hero">
-    <div class="hero-content">
-      <h1>Geosignal Analytics LLC</h1>
-      <h2>with its academic branch: Geosignal Research Institute</h2>
-      <p>Diving Deep into Geoscience with Signal Processing & AI</p>
-      <a href="#about" class="btn">Discover More</a>
-    </div>
-  </section>
-
-  <!-- About Us -->
-  <section id="about" class="about">
-    <div class="about-container">
-      <div class="about-img">
-        <img src="oboue.jpg" alt="Founder Profile" />
-      </div>
-      <div class="about-text">
-        <h2>About Us</h2>
-        <h3>Geosignal Analytics LLC</h3>
-        <p>
-          Geosignal Analytics LLC is a science-driven company delivering cutting-edge solutions 
-          in geophysical signal processing, seismic imaging, and AI-powered Earth sciences. 
-          We partner with industry, government, and environmental stakeholders to transform 
-          complex subsurface data into actionable insights.
-        </p>
-        <h3>Geosignal Research Institute</h3>
-        <p>
-          Geosignal Research Institute is the academic and scientific branch of Geosignal Analytics LLC. 
-          It focuses on fundamental research, peer-reviewed publications, and collaborations 
-          with universities and research centers worldwide. Through this institute, we bridge 
-          innovation and applied science, ensuring academic impact and scientific rigor.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Services -->
-  <section id="services" class="services">
-    <h2>Our Services</h2>
-    <div class="service-cards">
-      <div class="card">
-        <h3>Geophysical Analysis</h3>
-        <p>Advanced modeling and interpretation of geophysical datasets.</p>
-      </div>
-      <div class="card">
-        <h3>Seismic Imaging</h3>
-        <p>Signal processing and imaging for high-resolution subsurface exploration.</p>
-      </div>
-      <div class="card">
-        <h3>AI in Geoscience</h3>
-        <p>Machine learning and deep learning for seismic and geophysical challenges.</p>
-      </div>
-      <div class="card">
-        <h3>Training & Consulting</h3>
-        <p>Workshops, technical courses, and expert consulting services.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Research -->
-  <section id="research" class="research">
-    <h2>Research Focus</h2>
-    <div class="project-list">
-      <div class="project">
-        <h3>Distributed Acoustic Sensing (DAS)</h3>
-        <p>Developing advanced denoising and imaging methods for DAS seismic data.</p>
-      </div>
-      <div class="project">
-        <h3>Seismic Phase Enhancement</h3>
-        <p>Improving PcP and core-reflected phases using physics-informed deep learning methods.</p>
-      </div>
-      <div class="project">
-        <h3>Collaborations</h3>
-        <p>Partnering with academic, government, and industrial institutions worldwide.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Projects -->
-  <section id="projects" class="projects">
-    <h2>Innovation & Applications</h2>
+  <section id="about">
+    <h2>About Geosignal Analytics LLC</h2>
     <p>
-      Our projects sit at the intersection of applied industry needs and 
-      academic breakthroughs, ensuring relevance and scientific excellence.
+      Geosignal Analytics LLC est une entreprise basée aux États-Unis, spécialisée dans le traitement de signal et l’intelligence artificielle appliqués aux sciences de la Terre. Notre mission est de transformer les données géophysiques en connaissances exploitables pour l’industrie, la recherche et l’innovation.
     </p>
   </section>
 
-  <!-- Contact -->
-  <section id="contact" class="contact">
+  <section id="institute">
+    <h2>Geosignal Research Institute</h2>
+    <p>
+      Le Geosignal Research Institute est la branche académique et scientifique de Geosignal Analytics LLC. Il sert de pont entre l’innovation industrielle et la recherche académique.
+    </p>
+    <div class="research-focus">
+      <h3>Focus Areas</h3>
+      <ul>
+        <li>Distributed Acoustic Sensing (DAS)</li>
+        <li>Seismic Signal Processing</li>
+        <li>Physics-Informed AI</li>
+        <li>Subsurface Imaging</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <ul>
+      <li>Consulting en traitement de signal géophysique</li>
+      <li>Modélisation et simulation de données sismiques</li>
+      <li>Solutions IA pour l’exploration et le monitoring</li>
+    </ul>
+  </section>
+
+  <section id="contact">
     <h2>Contact Us</h2>
-    <p>Email: <a href="mailto:info@geosignal.analytics.com">info@geosignal.analytics.com</a></p>
-    <p>Follow us on 
-      <a href="https://www.facebook.com/profile.php?id=61578914532488" target="_blank">Facebook</a> | 
-      <a href="#" target="_blank">LinkedIn</a>
-    </p>
-    <a href="mailto:info@geosignal.analytics.com" class="btn">Send a Message</a>
+    <p>Email: contact@geosignalanalytics.com</p>
+    <p>Location: Oklahoma City, USA</p>
   </section>
 
-  <!-- Footer -->
   <footer>
-    <p>© 2025 Geosignal Analytics LLC. All rights reserved.  
-       Geosignal Research Institute is the academic and research branch of Geosignal Analytics LLC.</p>
+    <p>© 2025 Geosignal Analytics LLC | All Rights Reserved</p>
   </footer>
 </body>
 </html>
