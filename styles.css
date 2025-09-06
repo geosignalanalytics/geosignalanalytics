@@ -1,14 +1,51 @@
+/* NAVBAR - horizontal at the top */
+.navbar {
+  display: flex;
+  justify-content: space-between; /* logo left, links right */
+  align-items: center;            /* vertical center */
+  padding: 15px 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+}
+
+.navbar ul {
+  display: flex;       /* horizontal layout */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li {
+  margin-left: 25px;   /* space between links */
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar ul li a:hover,
+.navbar ul li a.active {
+  color: #3b82f6;
+}
+
+/* HERO - vertical center content */
 .hero {
   position: relative;
   height: 80vh;
   background: url('hero-bg.jpg') center/cover no-repeat;
   display: flex;
-  flex-direction: column;   /* center hero text vertically */
+  flex-direction: column;   /* vertical stacking for hero text */
   justify-content: center;
   align-items: center;
   text-align: center;
   color: white;
-  padding-top: 80px;       /* space so navbar doesn’t overlap text */
+  padding-top: 80px;       /* avoid navbar overlap */
 }
 
 .hero::before {
