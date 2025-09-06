@@ -1,4 +1,4 @@
-/* Global */
+/* ================= Global Styles ================= */
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
@@ -25,9 +25,7 @@ body {
   transition: color 0.3s;
 }
 .navbar ul li a:hover,
-.navbar ul li a.active {
-  color: #3b82f6;
-}
+.navbar ul li a.active { color: #3b82f6; }
 
 /* Hero Section */
 .hero {
