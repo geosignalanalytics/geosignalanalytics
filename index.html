@@ -6,14 +6,28 @@
   <title>GeoSignal Analytics LLC</title>
   <link rel="stylesheet" href="styles.css" />
   <script>
-    // JavaScript to toggle the display of the Research Institute content
+    // Toggle visibility for About section
+    function toggleAboutContent() {
+      var aboutSection = document.getElementById('about-section');
+      aboutSection.style.display = (aboutSection.style.display === 'none') ? 'block' : 'none';
+    }
+
+    // Toggle visibility for Research Institute section
     function toggleInstituteContent() {
       var instituteSection = document.getElementById('institute-section');
-      if (instituteSection.style.display === 'none') {
-        instituteSection.style.display = 'block';
-      } else {
-        instituteSection.style.display = 'none';
-      }
+      instituteSection.style.display = (instituteSection.style.display === 'none') ? 'block' : 'none';
+    }
+
+    // Toggle visibility for Services section
+    function toggleServicesContent() {
+      var servicesSection = document.getElementById('services-section');
+      servicesSection.style.display = (servicesSection.style.display === 'none') ? 'block' : 'none';
+    }
+
+    // Toggle visibility for Contact section
+    function toggleContactContent() {
+      var contactSection = document.getElementById('contact-section');
+      contactSection.style.display = (contactSection.style.display === 'none') ? 'block' : 'none';
     }
   </script>
 </head>
@@ -25,10 +39,10 @@
     <div class="logo"><img src="logo1.png" alt="Geosignal Logo"></div>
     <ul>
       <li><a href="index.html" class="active">Home</a></li>
-      <li><a href="about.html">About Us</a></li>
+      <li><a href="javascript:void(0);" onclick="toggleAboutContent()">About Us</a></li>
       <li><a href="javascript:void(0);" onclick="toggleInstituteContent()">Research Institute</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="contact.html">Contact</a></li>
+      <li><a href="javascript:void(0);" onclick="toggleServicesContent()">Services</a></li>
+      <li><a href="javascript:void(0);" onclick="toggleContactContent()">Contact</a></li>
     </ul>
   </nav>
 
@@ -37,7 +51,6 @@
     <h1>GeoSignal Analytics LLC</h1>
     <p>Diving Deep into Geoscience with Signal Processing & AI</p>
     <div class="hero-buttons">
-      <a href="about.html" class="btn">Learn More</a>
       <a href="contact.html" class="btn">Contact Us</a>
     </div>
   </div>
@@ -45,12 +58,27 @@
 
 <!-- MAIN CONTENT -->
 <main>
+  <!-- Welcome Section -->
   <section class="welcome">
     <h2>Welcome</h2>
-    <p>Geosignal Analytics LLC transforms geophysical data into actionable solutions for research and industry. Our scientific branch, the Geosignal Research Institute, bridges industrial innovation and academic research.</p>
+    <p>GeoSignal Analytics LLC transforms geophysical data into actionable solutions for research and industry. Our scientific branch, the Geosignal Research Institute, bridges industrial innovation and academic research.</p>
   </section>
 
-  <!-- Institute Section (Hidden initially, revealed when clicked) -->
+  <!-- About Us Section (Initially hidden) -->
+  <section id="about-section" style="display:none;">
+    <h2>About GeoSignal Analytics LLC</h2>
+    <p>
+      <strong>GeoSignal Analytics LLC</strong> is a leading geophysical data analytics firm specializing in advanced signal processing, machine learning, and innovative geoscience research. Founded by Dr. Innocent Oboué, the company bridges the gap between academia and industry by providing cutting-edge solutions for geophysical data analysis.
+    </p>
+    <p>
+      We leverage a multidisciplinary approach, combining expertise in geophysics, data science, and machine learning to solve complex subsurface imaging problems. Our goal is to transform raw geophysical data into actionable insights that support energy exploration, environmental monitoring, and infrastructure development.
+    </p>
+    <p>
+      With a commitment to scientific excellence, collaboration, and innovation, GeoSignal Analytics LLC is dedicated to driving research forward and contributing to advancements in the field of geophysics.
+    </p>
+  </section>
+
+  <!-- Research Institute Section (Initially hidden) -->
   <section id="institute-section" style="display:none;">
     <h2>GeoSignal Research Institute</h2>
     <p>The <strong>GeoSignal Research Institute</strong> is the academic and scientific branch of 
@@ -84,6 +112,26 @@
       <h4>5. Open Science & Collaboration</h4>
       <p>Promotion of transparent, reproducible, and collaborative research through open-source software, data sharing, and interdisciplinary partnerships.</p>
     </div>
+  </section>
+
+  <!-- Services Section (Initially hidden) -->
+  <section id="services-section" style="display:none;">
+    <h2>Our Services</h2>
+    <p>At GeoSignal Analytics LLC, we offer cutting-edge services to address challenges in the field of geophysics and signal processing. Our services include:</p>
+    <ul>
+      <li><strong>Signal Processing & Denoising:</strong> Advanced algorithms to enhance data resolution and reduce noise.</li>
+      <li><strong>Machine Learning Solutions:</strong> Custom AI models for geophysical data interpretation.</li>
+      <li><strong>Ambient Noise Monitoring:</strong> Utilizing passive seismic data for environmental analysis and imaging.</li>
+      <li><strong>Geophysical Inversion:</strong> High-performance computing for seismic model reconstruction.</li>
+      <li><strong>Consulting & Research:</strong> Custom solutions and partnerships in geophysics research.</li>
+    </ul>
+  </section>
+
+  <!-- Contact Section (Initially hidden) -->
+  <section id="contact-section" style="display:none;">
+    <h2>Contact Us</h2>
+    <p>Email: <a href="mailto:contact@geosignal.com">contact@geosignal.com</a></p>
+    <p>Phone: +1 (555) 123-4567</p>
   </section>
 </main>
 
