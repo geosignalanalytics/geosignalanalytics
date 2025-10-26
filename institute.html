@@ -3,21 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Signal Processing Course | GeoSignal Research Institute</title>
+  <title>GeoSignal Research Institute | GeoSignal Analytics LLC</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body id="training">
+<body>
 
   <!-- NAVBAR -->
   <nav class="navbar">
     <div class="logo">
-      <img src="gsri.png" alt="GSRI Logo" />
+      <img src="logo1.png" alt="GeoSignal Logo" />
     </div>
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About Us</a></li>
-      <li><a href="institute.html">Research Institute</a></li>
-      <li><a href="training.html">Training</a></li>
+      <li><a href="institute.html" class="active">Research Institute</a></li>
       <li><a href="services.html">Services</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
@@ -25,68 +24,71 @@
 
   <!-- HERO SECTION -->
   <section class="hero">
-    <h1>Signal Processing for Geoscientists & Engineers</h1>
-    <p>A professional and research-oriented training by the GeoSignal Research Institute</p>
-    <a href="#modules" class="btn">Explore Modules</a>
+    <h1>GeoSignal Research Institute</h1>
+    <p>The Academic and Scientific Branch of GeoSignal Analytics LLC</p>
+    <a href="services.html" class="btn">Explore Our Research</a> <!-- CTA Button -->
   </section>
 
   <!-- MAIN CONTENT -->
-  <main>
+  <main class="content-section">
     <section class="about-institute">
-      <h2>Course Overview</h2>
+      <h2>About the Institute</h2>
       <p>
-        The <strong>Signal Processing for Geoscientists and Engineers</strong> course bridges theory and practice by exploring modern approaches to data analysis, denoising, and reconstruction in geophysical applications.
-        Participants gain hands-on experience with both <strong>traditional algorithms</strong> and <strong>deep learning architectures</strong> designed for seismic and Distributed Acoustic Sensing (DAS) data.
-      </p>
-      <p>
-        Special emphasis is placed on <strong>simultaneous denoising and reconstruction of 2D–5D seismic datasets</strong> using state-of-the-art frameworks such as Deep Image Prior (DIP), Two-Step DIP (TSDIP), and transformer-based networks.
+        The <strong>GeoSignal Research Institute</strong> is the academic and scientific branch of 
+        <strong>GeoSignal Analytics LLC</strong>, dedicated to applied research, computational modeling, 
+        geophysical data analysis, and scientific publication in the fields of geosciences and artificial intelligence. 
+        The institute aims to advance scientific understanding, foster innovation in subsurface imaging, and build 
+        strong partnerships with universities, government agencies, and private companies.
       </p>
     </section>
 
-    <section id="modules" class="key-focus">
-      <h2>Course Modules</h2>
+    <section class="key-focus">
+      <h2>Key Focus Areas</h2>
 
       <div class="focus-area">
-        <h3>1. Introduction to Signal Processing Concepts</h3>
-        <p>Sampling, aliasing, signal-to-noise ratio (SNR), and digital filtering fundamentals with applications to geophysical signals.</p>
+        <h3>1. Signal Processing & Denoising</h3>
+        <ul>
+          <li>Development of advanced filtering and denoising algorithms for seismic and DAS data.</li>
+          <li>Enhanced signal-to-noise ratio for clearer subsurface imaging.</li>
+          <li>Custom algorithms for noise suppression in large datasets.</li>
+        </ul>
       </div>
 
       <div class="focus-area">
-        <h3>2. Spectral and Time–Frequency Analysis</h3>
-        <p>Fourier, STFT, and Hilbert–Huang methods for non-stationary signal representation and interpretation.</p>
+        <h3>2. Machine Learning for Geosciences</h3>
+        <ul>
+          <li>Integration of deep learning models for geophysical data interpretation.</li>
+          <li>Physics-guided AI approaches for subsurface characterization.</li>
+          <li>AI-assisted seismic inversion techniques.</li>
+        </ul>
       </div>
 
       <div class="focus-area">
-        <h3>3. Advanced Denoising Techniques</h3>
-        <p>Implementation of Non-Local Means (NLM), Deep Image Prior (DIP), and Two-Step DIP (TSDIP) approaches for seismic and DAS data.</p>
+        <h3>3. Ambient Noise & Interferometry</h3>
+        <ul>
+          <li>Extraction of Green's functions from ambient seismic noise.</li>
+          <li>Seismic tomography for structural health monitoring.</li>
+          <li>Passive monitoring solutions for environmental applications.</li>
+        </ul>
       </div>
 
       <div class="focus-area">
-        <h3>4. Simultaneous Denoising and Reconstruction of 2D–5D Data</h3>
-        <p>Integration of traditional rank-reduction, curvelet, and F–X prediction methods with modern deep learning models for multidimensional data recovery.</p>
+        <h3>4. Computational Geophysics</h3>
+        <ul>
+          <li>Numerical simulations for seismic wave propagation.</li>
+          <li>Advanced modeling techniques for geophysical inversion.</li>
+          <li>High-performance computing for large-scale geophysical analysis.</li>
+        </ul>
       </div>
 
       <div class="focus-area">
-        <h3>5. Machine Learning for Signal Processing</h3>
-        <p>Application of ML regression, classification, and unsupervised methods for signal segmentation and feature enhancement.</p>
+        <h3>5. Open Science & Collaboration</h3>
+        <ul>
+          <li>Promotion of reproducible and transparent research.</li>
+          <li>Open-source software and data sharing for scientific collaboration.</li>
+          <li>Interdisciplinary partnerships with academic and industry leaders.</li>
+        </ul>
       </div>
-
-      <div class="focus-area">
-        <h3>6. Hands-on Case Studies</h3>
-        <p>Full workflow execution from data preprocessing to reconstruction and visualization using MATLAB and Python.</p>
-      </div>
-
-      <div class="focus-area">
-        <h3>7. Capstone Project & Certification</h3>
-        <p>Participants complete an independent project and receive certification from the <strong>GeoSignal Research Institute (GSRI)</strong>.</p>
-      </div>
-    </section>
-
-    <section class="welcome">
-      <h2>Who Should Attend</h2>
-      <p>
-        This course is designed for graduate students, early-career researchers, and industry professionals working in geophysics, civil and environmental engineering, or data science who want to integrate AI into signal processing workflows.
-      </p>
     </section>
   </main>
 
