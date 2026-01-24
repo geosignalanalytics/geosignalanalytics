@@ -4,63 +4,176 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vision | GeoSignal Research Institute</title>
-  <link rel="stylesheet" href="styles.css" />
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      line-height: 1.7;
+      color: #2e2e2e;
+      background-color: #fcfcfc;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: #1c2a4a;
+      color: #ffffff;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .navbar a.active {
+      text-decoration: underline;
+    }
+
+    .hero {
+      padding: 4rem 2rem;
+      background-color: #eef2f8;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 2.6rem;
+      color: #1c2a4a;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: #3b4a66;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    main {
+      max-width: 900px;
+      margin: auto;
+      padding: 3rem 2rem;
+    }
+
+    h2 {
+      color: #1c2a4a;
+      margin-top: 3rem;
+      margin-bottom: 1rem;
+      font-size: 1.8rem;
+    }
+
+    p {
+      margin-bottom: 1.2rem;
+      font-size: 1rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: #1c2a4a;
+      color: #ffffff;
+      margin-top: 4rem;
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
 
-<body id="vision-institute">
+<body>
 
   <!-- NAVBAR -->
   <nav class="navbar">
-    <div class="nav-container">
-      <a href="index.html" class="logo">GeoSignal Research Institute</a>
-      <ul class="nav-links">
-        <li><a href="about.html">About</a></li>
-        <li><a href="mission.html">Mission</a></li>
-        <li><a href="vision-institute.html" class="active">Vision</a></li>
-        <li><a href="research.html">Research</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+    <div class="logo">
+      <img src="gsri.png" alt="GeoSignal Research Institute Logo" height="48" />
     </div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="institute.html">Institute</a></li>
+      <li><a href="mission-institute.html">Mission</a></li>
+      <li><a href="vision-institute.html" class="active">Vision</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
   </nav>
 
-  <!-- MAIN SECTION -->
-  <section class="section">
-    <div class="container">
-
-      <h1 class="section-title">Our Vision</h1>
-
-      <p>
-        GeoSignal Research Institute envisions a future where advanced geophysical
-        intelligence becomes a foundational pillar for sustainable development,
-        energy transition, and environmental resilience. We aim to position
-        data-driven subsurface imaging and AI-enhanced signal processing at the
-        heart of scientific discovery and societal impact.
-      </p>
-
-      <p>
-        Our vision is to bridge fundamental research and real-world applications
-        by developing robust computational frameworks that transform complex
-        geophysical signals into actionable knowledge. Through interdisciplinary
-        innovation, we seek to redefine how subsurface systems are explored,
-        monitored, and understood.
-      </p>
-
-      <p>
-        As a globally connected institute, we strive to serve as a hub for
-        international collaboration, capacity building, and scientific leadership,
-        empowering the next generation of researchers while contributing to
-        academia, industry, and public institutions worldwide.
-      </p>
-
-    </div>
+  <!-- HERO -->
+  <section class="hero">
+    <h1>Our Vision</h1>
+    <p>
+      Shaping the future of geophysical intelligence through innovation,
+      scientific leadership, and global impact.
+    </p>
   </section>
 
+  <!-- MAIN CONTENT -->
+  <main>
+
+    <section>
+      <h2>A Long-Term Scientific Vision</h2>
+      <p>
+        The <strong>GeoSignal Research Institute</strong> envisions a future in which
+        advanced geophysical intelligence plays a central role in addressing
+        global challenges related to energy transition, environmental sustainability,
+        natural hazard mitigation, and responsible resource exploration.
+      </p>
+
+      <p>
+        We aim to position computational geophysics and data-driven subsurface
+        imaging as foundational tools for understanding complex Earth systems
+        across spatial scales, from near-surface environments to deep-Earth
+        structures.
+      </p>
+    </section>
+
+    <section>
+      <h2>Data-Driven and Physics-Guided Earth Science</h2>
+      <p>
+        Our vision is to lead the integration of physics-based modeling,
+        signal processing, and artificial intelligence into coherent scientific
+        frameworks that remain interpretable, robust, and scientifically grounded.
+      </p>
+
+      <p>
+        By advancing hybrid methodologies that combine theory, numerical simulation,
+        and large-scale geophysical observations, we seek to redefine how subsurface
+        data are transformed into reliable knowledge and decision-support tools.
+      </p>
+    </section>
+
+    <section>
+      <h2>Global Collaboration and Scientific Leadership</h2>
+      <p>
+        The Institute aspires to become an internationally recognized hub for
+        geophysical research, fostering collaboration across academia, industry,
+        and public institutions. We envision a research environment that values
+        openness, intellectual rigor, and cross-disciplinary exchange.
+      </p>
+
+      <p>
+        Through training, mentorship, and international partnerships, GeoSignal
+        Research Institute aims to empower the next generation of scientists
+        and contribute to the global advancement of Earth and subsurface sciences.
+      </p>
+    </section>
+
+  </main>
+
   <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container">
-      <p>&copy; 2026 GeoSignal Research Institute. All rights reserved.</p>
-    </div>
+  <footer>
+    <p>
+      © 2025 GeoSignal Research Institute — A Scientific Branch of GeoSignal Analytics LLC
+    </p>
   </footer>
 
 </body>
