@@ -4,61 +4,157 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Computational Geophysics | GeoSignal Research Institute</title>
-  <link rel="stylesheet" href="styles.css" />
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      line-height: 1.7;
+      color: #2e2e2e;
+      background-color: #fcfcfc;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: #1c2a4a;
+      color: #ffffff;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .navbar a.active {
+      text-decoration: underline;
+    }
+
+    .hero {
+      padding: 4rem 2rem;
+      background-color: #eef2f8;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 2.6rem;
+      color: #1c2a4a;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: #3b4a66;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    section.content {
+      padding: 3rem 2rem;
+    }
+
+    .content-inner {
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #1c2a4a;
+      margin-top: 3rem;
+      margin-bottom: 1rem;
+      font-size: 1.8rem;
+    }
+
+    p {
+      margin-bottom: 1.2rem;
+      font-size: 1rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: #1c2a4a;
+      color: #ffffff;
+      margin-top: 4rem;
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
 <body>
 
   <!-- NAVBAR -->
   <nav class="navbar">
     <div class="logo">
-      <img src="gsri.png" alt="GeoSignal Logo" />
+      <img src="gsri.png" alt="GeoSignal Research Institute Logo" height="48" />
     </div>
     <ul>
       <li><a href="index.html">Home</a></li>
-      <li><a href="institute.html">Research Institute</a></li>
+      <li><a href="institute.html">Institute</a></li>
       <li><a href="services.html">Services</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
 
-  <!-- MAIN CONTENT -->
-  <main class="content-section">
-
+  <!-- HERO -->
+  <section class="hero">
     <h1>Computational Geophysics</h1>
-
-    <h2>Program Introduction</h2>
     <p>
-      This program provides a solid foundation in computational methods for geophysical modeling,
-      simulation, and interpretation, with a strong emphasis on seismic applications and subsurface imaging.
+      A core research and training program of the GeoSignal Research Institute
     </p>
+  </section>
 
-    <h2>Program Scope</h2>
-    <p>
-      The training focuses on numerical methods and computational workflows used in modern geophysics,
-      including forward modeling, inverse problems, and large-scale data analysis. Emphasis is placed on
-      linking physical theory with efficient computational implementation.
-    </p>
+  <!-- CONTENT -->
+  <section class="content">
+    <div class="content-inner">
 
-    <h2>Program Topics</h2>
-    <ul>
-      <li>Numerical methods for geophysical modeling</li>
-      <li>Forward and inverse problems</li>
-      <li>Computational seismic imaging</li>
-      <li>Optimization and regularization techniques</li>
-      <li>High-performance and large-scale computing concepts</li>
-    </ul>
+      <h2>Program Introduction</h2>
+      <p>
+        This program provides a solid foundation in computational methods for geophysical modeling,
+        simulation, and interpretation, with a strong emphasis on seismic applications and subsurface imaging.
+      </p>
 
-    <h2>Target Audience</h2>
-    <p>
-      Graduate students, early-career researchers, and professionals seeking strong computational
-      foundations in geophysics.
-    </p>
+      <h2>Program Scope</h2>
+      <p>
+        The training focuses on numerical methods and computational workflows used in modern geophysics,
+        including forward modeling, inverse problems, and large-scale data analysis. Emphasis is placed on
+        linking physical theory with efficient computational implementation.
+      </p>
 
-  </main>
+      <h2>Program Topics</h2>
+      <ul>
+        <li>Numerical methods for geophysical modeling</li>
+        <li>Forward and inverse problems</li>
+        <li>Computational seismic imaging</li>
+        <li>Optimization and regularization techniques</li>
+        <li>High-performance and large-scale computing concepts</li>
+      </ul>
+
+      <h2>Target Audience</h2>
+      <p>
+        Graduate students, early-career researchers, and professionals seeking strong computational
+        foundations in geophysics.
+      </p>
+
+    </div>
+  </section>
 
   <!-- FOOTER -->
   <footer>
-    <p>© 2025 GeoSignal Research Institute | Part of GeoSignal Analytics LLC</p>
+    <p>
+      © 2025 GeoSignal Research Institute — A Scientific Branch of GeoSignal Analytics LLC
+    </p>
   </footer>
 
 </body>
