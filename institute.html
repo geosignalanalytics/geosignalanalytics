@@ -5,8 +5,116 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>GeoSignal Research Institute | GeoSignal Analytics LLC</title>
 
-  <!-- Same CSS as mission.html -->
-  <link rel="stylesheet" href="styles.css" />
+  <!-- SAME CSS STRUCTURE AS mission.html -->
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      line-height: 1.7;
+      color: #2e2e2e;
+      background-color: #fcfcfc;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* NAVBAR */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: #1c2a4a;
+      color: #ffffff;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .navbar a.active {
+      text-decoration: underline;
+    }
+
+    /* HERO */
+    .hero {
+      padding: 4rem 2rem;
+      background-color: #eef2f8;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 2.6rem;
+      color: #1c2a4a;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: #3b4a66;
+      max-width: 850px;
+      margin: 0 auto 2rem auto;
+    }
+
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.75rem;
+    }
+
+    .hero-buttons .btn {
+      padding: 0.6rem 1.1rem;
+      background-color: #1c2a4a;
+      color: #ffffff;
+      text-decoration: none;
+      border-radius: 4px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      transition: background-color 0.2s ease;
+    }
+
+    .hero-buttons .btn:hover {
+      background-color: #2a3f6e;
+    }
+
+    /* MAIN CONTENT */
+    main.container {
+      max-width: 900px;
+      margin: auto;
+      padding: 3rem 2rem;
+    }
+
+    h2 {
+      color: #1c2a4a;
+      margin-top: 3rem;
+      margin-bottom: 1rem;
+      font-size: 1.8rem;
+    }
+
+    p {
+      margin-bottom: 1.2rem;
+      font-size: 1rem;
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: #1c2a4a;
+      color: #ffffff;
+      margin-top: 4rem;
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
 
 <body>
@@ -14,21 +122,22 @@
   <!-- NAVBAR -->
   <nav class="navbar">
     <div class="logo">
-      <img src="gsri.png" alt="GeoSignal Research Institute Logo" height="50" />
+      <img src="gsri.png" alt="GeoSignal Research Institute Logo" height="48" />
     </div>
     <ul>
       <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About Us</a></li>
-      <li><a href="institute.html" class="active">Research Institute</a></li>
+      <li><a href="institute.html" class="active">Institute</a></li>
       <li><a href="services.html">Services</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
 
-  <!-- HERO / INSTITUTE HEADER -->
+  <!-- HERO -->
   <section class="hero">
     <h1>GeoSignal Research Institute</h1>
-    <p>The Academic and Scientific Branch of GeoSignal Analytics LLC</p>
+    <p>
+      The Academic and Scientific Branch of GeoSignal Analytics LLC
+    </p>
 
     <div class="hero-buttons">
       <a href="about-institute.html" class="btn">About</a>
@@ -56,59 +165,32 @@
     <section class="institute-intro">
       <h2>Institute Overview</h2>
       <p>
-        The GeoSignal Research Institute (GSRI) is the scientific and academic arm of
-        GeoSignal Analytics LLC, dedicated to fundamental and applied research in
-        geophysics, signal processing, and data-driven subsurface imaging.
+        The <strong>GeoSignal Research Institute (GSRI)</strong> is the academic and scientific
+        branch of <strong>GeoSignal Analytics LLC</strong>. It is dedicated to advancing
+        fundamental and applied research in geophysics, signal processing, and
+        data-driven subsurface science.
       </p>
+
       <p>
-        This page serves as the central gateway to the Institute’s research activities,
-        academic programs, scientific outputs, and international collaborations.
+        The Institute serves as a platform for long-term scientific research,
+        high-impact publications, advanced training, and international collaboration.
+        It provides the intellectual and methodological foundation supporting both
+        academic innovation and responsible knowledge transfer.
       </p>
     </section>
 
-    <!-- ========================================================= -->
-    <!-- CONTENT BELOW IS KEPT FOR ARCHIVAL PURPOSES (NOT DISPLAYED)
-    =========================================================== -->
-
+    <!-- ARCHIVED CONTENT (INTENTIONALLY KEPT, NOT DISPLAYED) -->
     <!--
-    <section class="about-institute" id="about-institute">
-      <h2>About the Institute</h2>
-      <p>
-        The <strong>GeoSignal Research Institute</strong> is the academic and scientific branch of 
-        <strong>GeoSignal Analytics LLC</strong>. It is dedicated to advanced research, computational modeling, 
-        geophysical data analysis, and scientific publications at the interface of geosciences 
-        and artificial intelligence.
-      </p>
-      <p>
-        The Institute focuses on long-term scientific challenges, methodological innovation, 
-        and collaborative research with universities, government agencies, and research-driven 
-        industrial partners.
-      </p>
-    </section>
-
-    <section class="training-programs">
-      <h2>Training & Capacity Building</h2>
-      <p>
-        The GeoSignal Research Institute offers advanced, research-driven training programs designed 
-        for students, researchers, and professionals.
-      </p>
-
-      <ul class="training-list">
-        <li><a href="training-compgeo.html">Computational Geophysics</a></li>
-        <li><a href="training-signal.html">Signal Processing for Geophysical Applications</a></li>
-        <li><a href="training-ml-seismic.html">Machine Learning in Seismic Processing</a></li>
-        <li><a href="training-das.html">DAS Data Analysis & Interpretation</a></li>
-        <li><a href="training-geoai.html">Applied GeoAI for Subsurface Imaging</a></li>
-        <li><a href="training-workshops.html">Workshops, Short Courses & Certificates</a></li>
-      </ul>
-    </section>
+      Former About and Training sections preserved for internal reference.
     -->
 
   </main>
 
   <!-- FOOTER -->
   <footer>
-    <p>© 2025 GeoSignal Research Institute | A Scientific Branch of GeoSignal Analytics LLC</p>
+    <p>
+      © 2025 GeoSignal Research Institute — A Scientific Branch of GeoSignal Analytics LLC
+    </p>
   </footer>
 
 </body>
