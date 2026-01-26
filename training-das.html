@@ -4,59 +4,213 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>DAS Data Analysis & Interpretation | GeoSignal Research Institute</title>
-  <link rel="stylesheet" href="styles.css" />
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      line-height: 1.7;
+      color: #2e2e2e;
+      background-color: #fcfcfc;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: #1c2a4a;
+      color: #ffffff;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .navbar a.active {
+      text-decoration: underline;
+    }
+
+    .hero {
+      padding: 4rem 2rem;
+      background-color: #eef2f8;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 2.6rem;
+      color: #1c2a4a;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: #3b4a66;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    section.content {
+      padding: 3rem 2rem;
+    }
+
+    .content-inner {
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #1c2a4a;
+      margin-top: 3rem;
+      margin-bottom: 1rem;
+      font-size: 1.8rem;
+    }
+
+    p {
+      margin-bottom: 1.2rem;
+      font-size: 1rem;
+    }
+
+    ul {
+      margin-left: 1.2rem;
+    }
+
+    ul li {
+      margin-bottom: 0.8rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: #1c2a4a;
+      color: #ffffff;
+      margin-top: 4rem;
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
+
 <body>
 
   <!-- NAVBAR -->
   <nav class="navbar">
     <div class="logo">
-      <img src="gsri.png" alt="GeoSignal Logo" />
+      <img src="gsri.png" alt="GeoSignal Research Institute Logo" height="48" />
     </div>
     <ul>
       <li><a href="index.html">Home</a></li>
-      <li><a href="institute.html">Research Institute</a></li>
+      <li><a href="institute.html">Institute</a></li>
       <li><a href="services.html">Services</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
 
-  <!-- MAIN CONTENT -->
-  <main class="content-section">
-
+  <!-- HERO -->
+  <section class="hero">
     <h1>DAS Data Analysis & Interpretation</h1>
-
-    <h2>Program Introduction</h2>
     <p>
-      This program focuses on the analysis and interpretation of Distributed Acoustic Sensing (DAS)
-      data for subsurface monitoring and seismic applications.
+      A core research and training program of the GeoSignal Research Institute
     </p>
+  </section>
 
-    <h2>Program Scope</h2>
-    <p>
-      Participants will explore DAS-specific data characteristics, processing challenges,
-      and advanced analysis techniques used in research and field applications.
-    </p>
+  <!-- CONTENT -->
+  <section class="content">
+    <div class="content-inner">
 
-    <h2>Program Topics</h2>
-    <ul>
-      <li>DAS acquisition principles</li>
-      <li>DAS signal characteristics and noise sources</li>
-      <li>Processing and denoising of DAS data</li>
-      <li>Seismic and ambient noise applications</li>
-      <li>Case studies from real DAS deployments</li>
-    </ul>
+      <h2>Program Introduction</h2>
+      <p>
+        This program focuses on the analysis and interpretation of Distributed Acoustic
+        Sensing (DAS) data for subsurface monitoring, seismic imaging, and environmental
+        applications. The course introduces both theoretical principles and practical
+        workflows used in modern DAS studies.
+      </p>
 
-    <h2>Target Audience</h2>
-    <p>
-      Researchers, engineers, and practitioners working with DAS or large-scale sensing systems.
-    </p>
+      <h2>Program Scope</h2>
+      <p>
+        Participants explore DAS-specific data characteristics, acquisition geometries,
+        and processing challenges, as well as advanced analysis techniques used in
+        research, geothermal monitoring, urban sensing, and field-scale deployments.
+        Emphasis is placed on large-scale data handling and signal enhancement.
+      </p>
 
-  </main>
+      <h2>Program Topics</h2>
+      <ul>
+        <li>DAS acquisition principles and sensing physics</li>
+        <li>DAS signal characteristics and noise sources</li>
+        <li>Processing and denoising of DAS data</li>
+        <li>Seismic, microseismic, and ambient noise applications</li>
+        <li>Case studies from real DAS deployments</li>
+      </ul>
+
+      <h2>Courses / Teaching Materials</h2>
+      <p>
+        Teaching materials are designed to guide participants from fundamental DAS concepts
+        to advanced data analysis workflows. The course emphasizes reproducible processing,
+        interpretation strategies, and integration with conventional seismic methods.
+      </p>
+
+      <p>
+        Course resources include lecture notes, slides, and hands-on exercises based on
+        real DAS datasets from research and field applications.
+      </p>
+
+      <ul>
+        <li>
+          <strong>Introduction to Distributed Acoustic Sensing</strong><br />
+          <a href="materials/das_intro.pdf">Course notes (PDF)</a> |
+          <a href="materials/das_intro_slides.pdf">Lecture slides</a>
+        </li>
+
+        <li>
+          <strong>DAS Signal Characteristics and Noise Analysis</strong><br />
+          <a href="materials/das_signal_noise.pdf">Course notes (PDF)</a> |
+          <a href="materials/das_noise_examples.zip">Practical examples</a>
+        </li>
+
+        <li>
+          <strong>DAS Data Processing and Denoising</strong><br />
+          <a href="materials/das_processing_denoising.pdf">Course notes (PDF)</a> |
+          <a href="materials/das_processing_workflows.zip">Processing workflows</a>
+        </li>
+
+        <li>
+          <strong>DAS Applications in Seismology and Monitoring</strong><br />
+          <a href="materials/das_seismic_applications.pdf">Course notes (PDF)</a> |
+          <a href="materials/das_case_studies.pdf">Case studies</a>
+        </li>
+
+        <li>
+          <strong>Advanced Topics in DAS Data Interpretation</strong><br />
+          <a href="materials/advanced_das_interpretation.pdf">Documentation (PDF)</a>
+        </li>
+      </ul>
+
+      <h2>Target Audience</h2>
+      <p>
+        This program is intended for researchers, engineers, and practitioners working
+        with DAS or large-scale sensing systems who seek advanced skills in data analysis,
+        interpretation, and applied DAS workflows.
+      </p>
+
+    </div>
+  </section>
 
   <!-- FOOTER -->
   <footer>
-    <p>© 2025 GeoSignal Research Institute | Part of GeoSignal Analytics LLC</p>
+    <p>
+      © 2025 GeoSignal Research Institute — A Scientific Branch of GeoSignal Analytics LLC
+    </p>
   </footer>
 
 </body>
