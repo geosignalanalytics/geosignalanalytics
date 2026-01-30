@@ -72,45 +72,6 @@
       margin: 0 auto 2.5rem auto;
     }
 
-    /* ================= HERO BUTTONS GRID ================= */
-    .hero-buttons-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-      gap: 12px;
-      max-width: 900px;
-      margin: 0 auto;
-    }
-
-    .btn {
-      display: block;
-      padding: 0.65rem 1rem;
-      text-decoration: none;
-      text-align: center;
-      border-radius: 6px;
-      font-weight: 500;
-      font-size: 0.95rem;
-      transition: 0.3s ease;
-    }
-
-    .btn-primary {
-      background-color: #1c2a4a;
-      color: #ffffff;
-    }
-
-    .btn-primary:hover {
-      background-color: #2a3f6e;
-    }
-
-    .btn-secondary {
-      background-color: #eef2f8;
-      color: #1c2a4a;
-      border: 1px solid #1c2a4a;
-    }
-
-    .btn-secondary:hover {
-      background-color: #d8e0f0;
-    }
-
     /* ================= MAIN ================= */
     main {
       padding: 4rem 2rem;
@@ -145,6 +106,33 @@
       font-size: 1.05rem;
       max-width: 760px;
       margin-bottom: 1.4rem;
+    }
+
+    /* ================= LINKS CARDS GRID ================= */
+    .links-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      margin-top: 40px;
+    }
+
+    .link-card {
+      background: #ffffff;
+      padding: 25px 20px;
+      border-radius: 6px;
+      border-left: 4px solid #1c2a4a;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-decoration: none;
+      color: #1c2a4a;
+      font-weight: 500;
+      font-size: 1rem;
+    }
+
+    .link-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
     }
 
     /* ================= FOOTER ================= */
@@ -191,29 +179,6 @@
     <p class="hero-tagline">
       Advancing computational geophysics, signal intelligence, and data-driven subsurface research.
     </p>
-
-    <!-- HERO BUTTONS GRID -->
-    <div class="hero-buttons-grid">
-      <!-- PRIMARY ACTIONS -->
-      <a href="research-areas.html" class="btn btn-primary">Research Areas</a>
-      <a href="projects.html" class="btn btn-primary">Projects</a>
-      <a href="publications-institute.html" class="btn btn-primary">Publications</a>
-      <a href="people.html" class="btn btn-primary">People</a>
-
-      <!-- SECONDARY ACTIONS -->
-      <a href="about-institute.html" class="btn btn-secondary">About</a>
-      <a href="mission-institute.html" class="btn btn-secondary">Mission</a>
-      <a href="vision-institute.html" class="btn btn-secondary">Vision</a>
-      <a href="funding.html" class="btn btn-secondary">Funding</a>
-      <a href="training-institute.html" class="btn btn-secondary">Training</a>
-      <a href="seminars.html" class="btn btn-secondary">Seminars</a>
-      <a href="collaborations.html" class="btn btn-secondary">Collaborations</a>
-      <a href="facilities.html" class="btn btn-secondary">Facilities</a>
-      <a href="advisory-board.html" class="btn btn-secondary">Advisory Board</a>
-      <a href="ethics-open-science.html" class="btn btn-secondary">Ethics & Open Science</a>
-      <a href="partners.html" class="btn btn-secondary">Partners</a>
-      <a href="news.html" class="btn btn-secondary">News</a>
-    </div>
   </section>
 
   <!-- MAIN CONTENT -->
@@ -237,6 +202,32 @@
           It provides the intellectual and methodological foundation supporting both
           academic innovation and responsible knowledge transfer.
         </p>
+      </div>
+    </section>
+
+    <!-- Links / Redirection Cards -->
+    <section class="section">
+      <div class="panel">
+        <h2>Explore Our Institute</h2>
+        <div class="divider"></div>
+
+        <div class="links-grid">
+          <a href="research-areas.html" class="link-card">Research Areas</a>
+          <a href="projects.html" class="link-card">Projects</a>
+          <a href="publications-institute.html" class="link-card">Publications</a>
+          <a href="people.html" class="link-card">People</a>
+          <a href="training-institute.html" class="link-card">Training & Seminars</a>
+          <a href="about-institute.html" class="link-card">About</a>
+          <a href="mission-institute.html" class="link-card">Mission</a>
+          <a href="vision-institute.html" class="link-card">Vision</a>
+          <a href="funding.html" class="link-card">Funding</a>
+          <a href="collaborations.html" class="link-card">Collaborations</a>
+          <a href="facilities.html" class="link-card">Facilities</a>
+          <a href="advisory-board.html" class="link-card">Advisory Board</a>
+          <a href="ethics-open-science.html" class="link-card">Ethics & Open Science</a>
+          <a href="partners.html" class="link-card">Partners</a>
+          <a href="news.html" class="link-card">News</a>
+        </div>
       </div>
     </section>
   </main>
