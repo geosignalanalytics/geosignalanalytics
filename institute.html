@@ -48,11 +48,7 @@
     .hero {
       background: linear-gradient(180deg, #eef2f8 0%, #ffffff 100%);
       padding: 4.5rem 2rem 5.5rem;
-    }
-
-    .hero-inner {
-      max-width: 1200px;
-      margin: 0 auto;
+      text-align: center;
     }
 
     .hero h1 {
@@ -73,45 +69,7 @@
       font-size: 1.1rem;
       max-width: 720px;
       color: #3b4a66;
-    }
-
-    .hero-buttons-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-      gap: 0.8rem 1rem;
-      margin-top: 2.2rem;
-    }
-
-    .btn {
-      display: block;
-      text-align: center;
-      padding: 0.65rem 1.1rem;
-      border-radius: 5px;
-      font-size: 0.9rem;
-      font-weight: 500;
-      text-decoration: none;
-      transition: all 0.2s ease;
-    }
-
-    .btn-primary {
-      background-color: #1c2a4a;
-      color: #ffffff;
-    }
-
-    .btn-primary:hover {
-      background-color: #2a3f6e;
-      transform: translateY(-2px);
-    }
-
-    .btn-secondary {
-      background-color: #f2f5fb;
-      color: #1c2a4a;
-      border: 1px solid #1c2a4a;
-    }
-
-    .btn-secondary:hover {
-      background-color: #e0e6f0;
-      transform: translateY(-2px);
+      margin: 0 auto;
     }
 
     /* ================= MAIN ================= */
@@ -150,6 +108,40 @@
       margin-bottom: 1.4rem;
     }
 
+    /* ================= FEATURES CARDS ================= */
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 40px;
+    }
+
+    .feature-card {
+      background: #ffffff;
+      padding: 20px 25px;
+      border-left: 4px solid #1c2a4a;
+      border-radius: 6px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    }
+
+    .feature-card h3 {
+      margin-top: 0;
+      color: #1c2a4a;
+      font-size: 1.2rem;
+    }
+
+    .feature-card p {
+      margin: 0.5rem 0 0 0;
+      font-size: 0.95rem;
+      color: #3b4a66;
+    }
+
     /* ================= FOOTER ================= */
     footer {
       text-align: center;
@@ -163,10 +155,6 @@
     @media (max-width: 900px) {
       .hero h1 {
         font-size: 2.4rem;
-      }
-
-      .hero-buttons-grid {
-        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
       }
     }
 
@@ -193,39 +181,16 @@
 
   <!-- HERO -->
   <section class="hero">
-    <div class="hero-inner">
-      <h1>GeoSignal Research Institute</h1>
-      <p class="hero-subtitle">The Academic and Scientific Branch of GeoSignal Analytics LLC</p>
-      <p class="hero-tagline">
-        Advancing computational geophysics, signal intelligence, and data-driven subsurface research.
-      </p>
-
-      <div class="hero-buttons-grid">
-        <!-- PRIMARY ACTIONS -->
-        <a href="research-areas.html" class="btn btn-primary">Research Areas</a>
-        <a href="projects.html" class="btn btn-primary">Projects</a>
-        <a href="publications-institute.html" class="btn btn-primary">Publications</a>
-        <a href="people.html" class="btn btn-primary">People</a>
-
-        <!-- SECONDARY ACTIONS -->
-        <a href="about-institute.html" class="btn btn-secondary">About</a>
-        <a href="mission-institute.html" class="btn btn-secondary">Mission</a>
-        <a href="vision-institute.html" class="btn btn-secondary">Vision</a>
-        <a href="funding.html" class="btn btn-secondary">Funding</a>
-        <a href="training-institute.html" class="btn btn-secondary">Training</a>
-        <a href="seminars.html" class="btn btn-secondary">Seminars</a>
-        <a href="collaborations.html" class="btn btn-secondary">Collaborations</a>
-        <a href="facilities.html" class="btn btn-secondary">Facilities</a>
-        <a href="advisory-board.html" class="btn btn-secondary">Advisory Board</a>
-        <a href="ethics-open-science.html" class="btn btn-secondary">Ethics & Open Science</a>
-        <a href="partners.html" class="btn btn-secondary">Partners</a>
-        <a href="news.html" class="btn btn-secondary">News</a>
-      </div>
-    </div>
+    <h1>GeoSignal Research Institute</h1>
+    <p class="hero-subtitle">The Academic and Scientific Branch of GeoSignal Analytics LLC</p>
+    <p class="hero-tagline">
+      Advancing computational geophysics, signal intelligence, and data-driven subsurface research.
+    </p>
   </section>
 
   <!-- MAIN CONTENT -->
   <main>
+    <!-- Overview Panel -->
     <section class="section">
       <div class="panel">
         <h2>Institute Overview</h2>
@@ -244,6 +209,41 @@
           It provides the intellectual and methodological foundation supporting both
           academic innovation and responsible knowledge transfer.
         </p>
+      </div>
+    </section>
+
+    <!-- Features / Services Cards -->
+    <section class="section">
+      <div class="panel">
+        <h2>Our Services & Research Areas</h2>
+        <div class="divider"></div>
+
+        <div class="features-grid">
+          <div class="feature-card">
+            <h3>Computational Geophysics</h3>
+            <p>Advanced numerical modeling and simulation for subsurface imaging and signal interpretation.</p>
+          </div>
+          <div class="feature-card">
+            <h3>Signal Processing</h3>
+            <p>Noise suppression, denoising weak seismic phases, and advanced waveform analysis.</p>
+          </div>
+          <div class="feature-card">
+            <h3>Data-driven Research</h3>
+            <p>Machine learning and AI approaches for groundwater, seismicity, and subsurface exploration.</p>
+          </div>
+          <div class="feature-card">
+            <h3>Training & Seminars</h3>
+            <p>Workshops, training programs, and seminars to develop expertise in geoscience analytics.</p>
+          </div>
+          <div class="feature-card">
+            <h3>Collaborations</h3>
+            <p>International partnerships with universities, research institutes, and industry.</p>
+          </div>
+          <div class="feature-card">
+            <h3>Facilities</h3>
+            <p>State-of-the-art computational labs, instrumentation, and data infrastructure.</p>
+          </div>
+        </div>
       </div>
     </section>
   </main>
